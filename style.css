@@ -5,12 +5,12 @@
 	
 	body {
 	    -ms-overflow-x: hidden;
-        font-family: 'Open Sans', sans-serif;
+	    font-family: 'Open Sans', sans-serif;
 	}
 	
 	html,
 	body,
-	header{
+	header {
 	    height: 100%;
 	}
 	
@@ -21,52 +21,55 @@
 	    -moz-box-sizing: border-box;
 	    box-sizing: border-box;
 	}
-
-    ::-webkit-input-placeholder {
-        color: white;
-    }
-
-    :-moz-placeholder { /* Firefox 18- */
-       color: white;  
-    }
-
-    ::-moz-placeholder {  /* Firefox 19+ */
-       color: white;  
-    }
-
-    :-ms-input-placeholder {  
-       color: white;  
-    }
+	
+	::-webkit-input-placeholder {
+	    color: white;
+	}
+	
+	:-moz-placeholder {
+	    /* Firefox 18- */
+	    color: white;
+	}
+	
+	::-moz-placeholder {
+	    /* Firefox 19+ */
+	    color: white;
+	}
+	
+	:-ms-input-placeholder {
+	    color: white;
+	}
 	
 	header {
 	    background-image: url('img/landing-page-outsoft-2.jpg');
 	    background-size: cover;
-        position: relative;
+	    position: relative;
 	}
-    header:after{
-        content: '';
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        height: 100%;
-        width: 50%;
-        background-color: rgba(0,169,181, 0.7);
-        z-index: 1;
-    }
-
-    .logo{
-        width: 250px;
-        margin-top: 30px;
-
-    }
-    .content{
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
 	
-	header .content + .content{
+	header:after {
+	    content: '';
+	    position: absolute;
+	    right: 0px;
+	    top: 0px;
+	    height: 100%;
+	    width: 50%;
+	    background-color: rgba(0, 169, 181, 0.7);
+	    z-index: 1;
+	}
+	
+	.logo {
+	    width: 250px;
+	    margin-top: 30px;
+	}
+	
+	.content {
+	    width: 100%;
+	    max-width: 1200px;
+	    margin: 0 auto;
+	    overflow: hidden;
+	}
+	
+	header .content + .content {
 	    position: absolute;
 	    top: 50%;
 	    left: 50%;
@@ -75,436 +78,474 @@
 	    -o-transform: translate(-50%, -50%);
 	    -webkit-transform: translate(-50%, -50%);
 	    -ms-transform: translate(-50%, -50%);
-	    
-        z-index: 2;
+	    z-index: 2;
 	}
-
-    header .content > div{
+	
+	header .content > div {
 	    width: 50%;
-        float: left;
-        text-align: center;
-        position: relative;
+	    float: left;
+	    text-align: center;
+	    position: relative;
 	}
-
-.buttomBlock{
-    position: absolute;
-    width: 100%;
-    color: white;
-    bottom: 40px;
-}
-.buttomBlock h1{
-    font-size: 30px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    font-weight: 400;
-}
-.buttomBlock h1 span{
-    font-size: 35px;
-    font-weight: 600;
-}
-
-    .triangleblock{
-        overflow: hidden;
-    }
-
-    .triangleblock .content > div{
-        width: 33.33%;
-        float: left;
-        position: relative;
-        height: 500px;
-    }
-    .triangleblock .content > div h2{
-        position: absolute;
-        top: 52%;
-        width: 320px;
-        left: 50%;
-        padding-left: 80px;
-        transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        color: white;
-        text-align: center;
-        font-size: 24px;
-        text-transform: uppercase;
-        font-weight: 500;
-        box-sizing: border-box;
-    }
-    .triangleblock .content > div img{
-        width: 320px;
-        margin: 100px auto;
-        display: block;
-    }
-    .imgOverlay{
-        width: 320px;
-        margin: 0 auto;
-        position: relative;
-    }
-    .triangleblock .content > div:nth-child(1) .imgOverlay:before{
-        content: '01';
-        position: absolute;
-        left: 15%;
-        font-size: 40px;
-        color: white;
-        font-weight: bold;
-        top: 47%;
-        transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-
-    }
-    .triangleblock .content > div:nth-child(2) .imgOverlay:before{
-        content: '02';
-        position: absolute;
-        left: 15%;
-        font-size: 40px;
-        color: white;
-        font-weight: bold;
-        top: 47%;
-        transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-
-    }
-    .triangleblock .content > div:nth-child(3) .imgOverlay:before{
-        content: '03';
-        position: absolute;
-        left: 15%;
-        font-size: 40px;
-        color: white;
-        font-weight: bold;
-        top: 47%;
-        transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-
-    }
-.triangleblock .content > div:hover:before {
-    content: '';
-    position: absolute;
-    left: 0px;
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-    top: 0px !important;
-    transform: translateY(0%);
-    -moz-transform: translateY(0%);
-    -o-transform: translateY(0%);
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-}
-.hoverBlock h3{
-    -webkit-transform: translateY(60%);
-    -ms-transform: translateY(60%);
-    transform: translateY(60%);
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-.hoverBlock p {
-    -webkit-transform: translateY(30%);
-    -ms-transform: translateY(30%);
-    transform: translateY(30%);
-    font-size: 15px;
-}
-.triangleblock .content > div:hover .hoverBlock p, .triangleblock .content > div:hover .hoverBlock h3 {
-    -webkit-transition: all 0.27s ease-in-out;
-    transition: all 0.27s ease-in-out;
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);
-}
-
-.triangleblock .content > div:hover .circleblock{
-    display: none;
-}
-
-/* Bob */
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@-webkit-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-.hvr-bob {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
- -webkit-animation-name: hvr-bob-float, hvr-bob;
-  animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-    .circleblock{
-        position: absolute;
-        right: 0px;
-        top: 50%;
-    }
-    .circleblock p{
-        position: relative;
-        width: 10px;
-        height: 10px;
-        background-color: #00adb9;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-        display: block;
-    }
-    .circleblock p:after{
-        content: '';
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        right: -15px;
-        top: 2px;
-        background-color: #00adb9;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-    }	
-    .circleblock p:before{
-        content: '';
-        position: absolute;
-        width: 6px;
-        height: 6px;
-        left: -15px;
-        top: 2px;
-        background-color: #00adb9;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        border-radius: 50%;
-    }
-    .fourBlocks{
-        overflow: hidden;
-        text-align: center;
-    }
-    .fourBlocks .content > div{
-        width: 50%;
-        float: left;
-        padding: 100px;
-        position: relative;
-        text-align: center;
-        background-size: cover !important;
-        background-position: center top;
-        background-color: #f7f8f9;
-    }
-    .fourBlocks .content{
-        max-width: 2000px;
-    }
-    .fourBlocks .content > div h2{
-        font-size: 30px;
-        margin-bottom: 40px;
-        position: relative;
-    }
-    .fourBlocks .content > div p{
-        position: relative;
-        line-height: 30px;
-        font-weight: 300;
-    }
-    .fourBlocks .content > div:nth-child(4){
-        background-image: url('img/lang.jpg');
-    }
-    .fourBlocks .content > div:nth-child(4):before{
-        content: '';
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0,169,181, 0.7);
-        z-index: 1;
-    }
-    .fourBlocks .content > div:nth-child(4) h2, .fourBlocks .content > div:nth-child(4) p{
-        color: white;
-        z-index: 2;
-    }
-
-    .clickToForm{
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        border-radius: 20px;
-        text-align: center;
-        color: white;
-        padding: 10px 50px;
-        text-transform: uppercase;
-        background-color: #5bd700;
-        text-decoration: none;
-        margin-top: 20px;
-        display: inline-block;
-        font-weight: 700;
-    }
-    .clickToForm:hover{
-        background-color: white;
-        color: #5bd700;
-        cursor: pointer;
-    }
-
-    .hoverBlock {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        width: 85%;
-        left: 7.5%;
-        text-align: center;
-        color: white;
-        opacity: 0;
-    }
-    .triangleblock .content{
-        max-width: 2000px;
-    }
-    .triangleblock .content > div:hover .hoverBlock{
-        opacity: 1;
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        -ms-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        transition: all 0.2s ease;
-        z-index: 2;
-    }
-    .triangleblock .content > div:hover:after{
-        content: '';
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 100%;
-        width: 100%;
-        background: url('img/stock1.jpg') no-repeat center center;
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        -ms-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        transition: all 0.2s ease;
-        z-index: 1;
-    }
-    .triangleblock .content > div:hover:nth-child(2):after{
-        background: url('img/stock2.jpg') no-repeat center center !important;
-    }
-    .triangleblock .content > div:hover:nth-child(3):after{
-        background: url('img/stock3.jpg') no-repeat center center !important;
-    }
-    .triangleblock .content > div:hover img{
-        opacity: 0;
+	
+	.buttomBlock {
+	    position: absolute;
+	    width: 100%;
+	    color: white;
+	    bottom: 40px;
+	}
+	
+	.buttomBlock h1 {
+	    font-size: 30px;
+	    text-transform: uppercase;
+	    margin-bottom: 20px;
+	    font-weight: 400;
+	}
+	
+	.buttomBlock h1 span {
+	    font-size: 35px;
+	    font-weight: 600;
+	}
+	
+	.triangleblock {
+	    overflow: hidden;
+	}
+	
+	.triangleblock .content > div {
+	    width: 33.33%;
+	    float: left;
+	    position: relative;
+	    height: 500px;
+	}
+	
+	.triangleblock .content > div h2 {
+	    position: absolute;
+	    top: 52%;
+	    width: 320px;
+	    left: 50%;
+	    padding-left: 80px;
+	    transform: translate(-50%, -50%);
+	    -moz-transform: translate(-50%, -50%);
+	    -o-transform: translate(-50%, -50%);
+	    -webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	    color: white;
+	    text-align: center;
+	    font-size: 24px;
+	    text-transform: uppercase;
+	    font-weight: 500;
+	    box-sizing: border-box;
+	}
+	
+	.triangleblock .content > div img {
+	    width: 320px;
+	    margin: 100px auto;
+	    display: block;
+	}
+	
+	.imgOverlay {
+	    width: 320px;
+	    margin: 0 auto;
+	    position: relative;
+	}
+	
+	.triangleblock .content > div:nth-child(1) .imgOverlay:before {
+	    content: '01';
+	    position: absolute;
+	    left: 15%;
+	    font-size: 40px;
+	    color: white;
+	    font-weight: bold;
+	    top: 47%;
+	    transform: translateY(-50%);
+	    -moz-transform: translateY(-50%);
+	    -o-transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	}
+	
+	.triangleblock .content > div:nth-child(2) .imgOverlay:before {
+	    content: '02';
+	    position: absolute;
+	    left: 15%;
+	    font-size: 40px;
+	    color: white;
+	    font-weight: bold;
+	    top: 47%;
+	    transform: translateY(-50%);
+	    -moz-transform: translateY(-50%);
+	    -o-transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	}
+	
+	.triangleblock .content > div:nth-child(3) .imgOverlay:before {
+	    content: '03';
+	    position: absolute;
+	    left: 15%;
+	    font-size: 40px;
+	    color: white;
+	    font-weight: bold;
+	    top: 47%;
+	    transform: translateY(-50%);
+	    -moz-transform: translateY(-50%);
+	    -o-transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	}
+	
+	.triangleblock .content > div:hover:before {
+	    content: '';
+	    position: absolute;
+	    left: 0px;
+	    font-size: 40px;
+	    color: white;
+	    font-weight: bold;
+	    top: 0px !important;
+	    transform: translateY(0%);
+	    -moz-transform: translateY(0%);
+	    -o-transform: translateY(0%);
+	    -webkit-transform: translateY(0%);
+	    -ms-transform: translateY(0%);
+	    height: 100%;
+	    width: 100%;
+	    background-color: rgba(0, 0, 0, 0.5);
+	    z-index: 2;
+	}
+	
+	.hoverBlock h3 {
+	    -webkit-transform: translateY(60%);
+	    -ms-transform: translateY(60%);
+	    transform: translateY(60%);
+	    font-size: 24px;
+	    margin-bottom: 20px;
+	}
+	
+	.hoverBlock p {
+	    -webkit-transform: translateY(30%);
+	    -ms-transform: translateY(30%);
+	    transform: translateY(30%);
+	    font-size: 15px;
+	}
+	
+	.triangleblock .content > div:hover .hoverBlock p,
+	.triangleblock .content > div:hover .hoverBlock h3 {
+	    -webkit-transition: all 0.27s ease-in-out;
+	    transition: all 0.27s ease-in-out;
+	    -webkit-transform: translateY(0%);
+	    -ms-transform: translateY(0%);
+	    transform: translateY(0%);
+	}
+	
+	.triangleblock .content > div:hover .circleblock {
+	    display: none;
+	}
+	
+	.positionImgInBlock {
+	    position: absolute;
+	    left: 0px;
+	    top: 0px;
+	    width: 100%;
         z-index: -1;
-        -webkit-transition: all 0.2s ease;
-        -moz-transition: all 0.2s ease;
-        -ms-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        transition: all 0.2s ease;
-    }
-    
-.buttomBlock img:hover{
-    cursor: pointer;
-}
-    .fourBlocks .clickToForm{
-        margin-bottom: 20px;
-    }
+	}
+	/* Bob */
+	
+	@-webkit-keyframes hvr-bob {
+	    0% {
+	        -webkit-transform: translateY(-8px);
+	        transform: translateY(-8px);
+	    }
+	    50% {
+	        -webkit-transform: translateY(-4px);
+	        transform: translateY(-4px);
+	    }
+	    100% {
+	        -webkit-transform: translateY(-8px);
+	        transform: translateY(-8px);
+	    }
+	}
+	
+	@keyframes hvr-bob {
+	    0% {
+	        -webkit-transform: translateY(-8px);
+	        transform: translateY(-8px);
+	    }
+	    50% {
+	        -webkit-transform: translateY(-4px);
+	        transform: translateY(-4px);
+	    }
+	    100% {
+	        -webkit-transform: translateY(-8px);
+	        transform: translateY(-8px);
+	    }
+	}
+	
+	@-webkit-keyframes hvr-bob-float {
+	    100% {
+	        -webkit-transform: translateY(-8px);
+	        transform: translateY(-8px);
+	    }
+	}
+	
+	@keyframes hvr-bob-float {
+	    100% {
+	        -webkit-transform: translateY(-8px);
+	        transform: translateY(-8px);
+	    }
+	}
+	
+	.hvr-bob {
+	    display: inline-block;
+	    vertical-align: middle;
+	    -webkit-transform: translateZ(0);
+	    transform: translateZ(0);
+	    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    -moz-osx-font-smoothing: grayscale;
+	    -webkit-animation-name: hvr-bob-float, hvr-bob;
+	    animation-name: hvr-bob-float, hvr-bob;
+	    -webkit-animation-duration: .3s, 1.5s;
+	    animation-duration: .3s, 1.5s;
+	    -webkit-animation-delay: 0s, .3s;
+	    animation-delay: 0s, .3s;
+	    -webkit-animation-timing-function: ease-out, ease-in-out;
+	    animation-timing-function: ease-out, ease-in-out;
+	    -webkit-animation-iteration-count: 1, infinite;
+	    animation-iteration-count: 1, infinite;
+	    -webkit-animation-fill-mode: forwards;
+	    animation-fill-mode: forwards;
+	    -webkit-animation-direction: normal, alternate;
+	    animation-direction: normal, alternate;
+	}
+	
+	.circleblock {
+	    position: absolute;
+	    right: 0px;
+	    top: 50%;
+	}
+	
+	.circleblock p {
+	    position: relative;
+	    width: 10px;
+	    height: 10px;
+	    background-color: #00adb9;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+	    border-radius: 50%;
+	    display: block;
+	}
+	
+	.circleblock p:after {
+	    content: '';
+	    position: absolute;
+	    width: 6px;
+	    height: 6px;
+	    right: -15px;
+	    top: 2px;
+	    background-color: #00adb9;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+	    border-radius: 50%;
+	}
+	
+	.circleblock p:before {
+	    content: '';
+	    position: absolute;
+	    width: 6px;
+	    height: 6px;
+	    left: -15px;
+	    top: 2px;
+	    background-color: #00adb9;
+	    -webkit-border-radius: 50%;
+	    -moz-border-radius: 50%;
+	    border-radius: 50%;
+	}
+	
+	.fourBlocks {
+	    overflow: hidden;
+	    text-align: center;
+	}
+	
+	.fourBlocks .content > div {
+	    width: 50%;
+	    float: left;
+	    padding: 100px;
+	    position: relative;
+	    text-align: center;
+	    background-size: cover !important;
+	    background-position: center top;
+	    background-color: #f7f8f9;
+	}
+	
+	.fourBlocks .content {
+	    max-width: 2000px;
+	}
+	
+	.fourBlocks .content > div h2 {
+	    font-size: 30px;
+	    margin-bottom: 40px;
+	    position: relative;
+	}
+	
+	.fourBlocks .content > div p {
+	    position: relative;
+	    line-height: 30px;
+	    font-weight: 300;
+	}
+	
+	.fourBlocks .content > div:nth-child(4) {
+	    background-image: url('img/lang.jpg');
+	}
+	
+	.fourBlocks .content > div:nth-child(4):before {
+	    content: '';
+	    position: absolute;
+	    right: 0px;
+	    top: 0px;
+	    height: 100%;
+	    width: 100%;
+	    background-color: rgba(0, 169, 181, 0.7);
+	    z-index: 1;
+	}
+	
+	.fourBlocks .content > div:nth-child(4) h2,
+	.fourBlocks .content > div:nth-child(4) p {
+	    color: white;
+	    z-index: 2;
+	}
+	
+	.clickToForm {
+	    -webkit-border-radius: 20px;
+	    -moz-border-radius: 20px;
+	    border-radius: 20px;
+	    text-align: center;
+	    color: white;
+	    padding: 10px 50px;
+	    text-transform: uppercase;
+	    background-color: #5bd700;
+	    text-decoration: none;
+	    margin-top: 20px;
+	    display: inline-block;
+	    font-weight: 700;
+	}
+	
+	.clickToForm:hover {
+	    background-color: white;
+	    color: #5bd700;
+	    cursor: pointer;
+	}
+	
+	.hoverBlock {
+	    position: absolute;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    -moz-transform: translateY(-50%);
+	    -o-transform: translateY(-50%);
+	    -webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	    width: 85%;
+	    left: 7.5%;
+	    text-align: center;
+	    color: white;
+	    opacity: 0;
+	}
+	
+	.triangleblock .content {
+	    max-width: 2000px;
+	}
+	
+	.triangleblock .content > div:hover .hoverBlock {
+	    opacity: 1;
+	    -webkit-transition: all 0.2s ease;
+	    -moz-transition: all 0.2s ease;
+	    -ms-transition: all 0.2s ease;
+	    -o-transition: all 0.2s ease;
+	    transition: all 0.2s ease;
+	    z-index: 2;
+	}
+	
+	.triangleblock .content > div:hover:after {
+	    content: '';
+	    position: absolute;
+	    top: 0px;
+	    left: 0px;
+	    height: 100%;
+	    width: 100%;
+	    background: url('img/stock1.jpg') no-repeat center center;
+	    -webkit-transition: all 0.2s ease;
+	    -moz-transition: all 0.2s ease;
+	    -ms-transition: all 0.2s ease;
+	    -o-transition: all 0.2s ease;
+	    transition: all 0.2s ease;
+	    z-index: 1;
+	}
+	
+	.triangleblock .content > div:hover:nth-child(2):after {
+	    background: url('img/stock2.jpg') no-repeat center center !important;
+	}
+	
+	.triangleblock .content > div:hover:nth-child(3):after {
+	    background: url('img/stock3.jpg') no-repeat center center !important;
+	}
+	
+	.triangleblock .content > div:hover img {
+	    opacity: 0;
+	    z-index: -1;
+	    -webkit-transition: all 0.2s ease;
+	    -moz-transition: all 0.2s ease;
+	    -ms-transition: all 0.2s ease;
+	    -o-transition: all 0.2s ease;
+	    transition: all 0.2s ease;
+	}
+	
+	.buttomBlock img:hover {
+	    cursor: pointer;
+	}
+	
+	.fourBlocks .clickToForm {
+	    margin-bottom: 20px;
+	}
 	
 	form {
 	    max-width: 430px;
 	    margin: 50px auto;
-        padding: 0px 20px;
+	    padding: 0px 20px;
 	}
-    form h2{
-        font-size: 30px;
-        margin-bottom: 40px;
-        color: white;
-        text-transform: uppercase;
-        font-weight: 400;
-    }
-    form h2 span{
-        font-weight: bold;
-        font-size: 42px;
-    }
+	
+	form h2 {
+	    font-size: 30px;
+	    margin-bottom: 40px;
+	    color: white;
+	    text-transform: uppercase;
+	    font-weight: 400;
+	}
+	
+	form h2 span {
+	    font-weight: bold;
+	    font-size: 42px;
+	}
 	
 	.button_click {
-	    background: rgba(91, 215, 0, 1); !important;
-        padding: 10px;
-        font-weight: 400;
-        border: 0px solid rgba(255, 255, 255, 1);
-        text-transform: uppercase;
-        outline: none;
-        -webkit-appearance: none;
-        margin-bottom: 0px;
-        width: 150px;
-        font-size: 20px;
-        text-align: center;
-        /* float: left; */
-        display: block;
+	    background: rgba(91, 215, 0, 1);
+	    !important;
+	    padding: 10px;
+	    font-weight: 400;
+	    border: 0px solid rgba(255, 255, 255, 1);
+	    text-transform: uppercase;
+	    outline: none;
+	    -webkit-appearance: none;
+	    margin-bottom: 0px;
+	    width: 150px;
+	    font-size: 20px;
+	    text-align: center;
+	    /* float: left; */
+	    display: block;
 	}
 	
 	.button_click:disabled {
-	    background: rgba(91, 215, 0, 0.5); !important;
+	    background: rgba(91, 215, 0, 0.5);
+	    !important;
 	}
 	
 	.button_click:hover {
@@ -514,44 +555,47 @@
 	form input,
 	form textarea {
 	    width: 100%;
-        margin-bottom: 20px;
-        padding: 10px;
-        padding-left: 20px;
-        background: none;
-        color: white;
-        border: 0px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-        background-color: rgba(255,255,255,0.3);
-        text-align: left;
-        font-size: 16px;
-        outline: none;
-        -webkit-appearance: none;
-        resize: none;
-        font-family: 'Open Sans';
-        position: relative;
+	    margin-bottom: 20px;
+	    padding: 10px;
+	    padding-left: 20px;
+	    background: none;
+	    color: white;
+	    border: 0px;
+	    -webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	    border-radius: 10px;
+	    background-color: rgba(255, 255, 255, 0.3);
+	    text-align: left;
+	    font-size: 16px;
+	    outline: none;
+	    -webkit-appearance: none;
+	    resize: none;
+	    font-family: 'Open Sans';
+	    position: relative;
 	}
-    .required-field{
-        -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-    }
-    .required-field:after{
-        position: absolute;
-        top: -15px;
-        right: -15px;
-        display: block;
-        width: 30px;
-        height: 30px;
-        background: #f68500;
-        content: "";
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
+	
+	.required-field {
+	    -webkit-border-radius: 10px;
+	    -moz-border-radius: 10px;
+	    border-radius: 10px;
+	    overflow: hidden;
+	    position: relative;
+	}
+	
+	.required-field:after {
+	    position: absolute;
+	    top: -15px;
+	    right: -15px;
+	    z-index: -1;
+	    display: block;
+	    width: 30px;
+	    height: 30px;
+	    background: #f68500;
+	    content: "";
+	    -webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	}
 	
 	input:-webkit-autofill,
 	textarea:-webkit-autofill,
@@ -563,7 +607,7 @@
 	
 	textarea {
 	    min-height: 50px;
-    }
+	}
 	
 	.countTextatea {
 	    display: block;
@@ -573,29 +617,32 @@
 	
 	.textareaMes {
 	    position: relative;
-        margin-bottom: 90px;
+	    margin-bottom: 90px;
 	}
 	
 	.textareaMes p,
 	.textareaMes ul li {
 	    color: rgba(255, 255, 255, 0.6);
 	    font-size: 20px;
-        text-align: left;
+	    text-align: left;
 	}
-    .textareaMes p{
-        padding: 10px;
-    }
-    .textareaMes ul{
-        width: 100%;
-        margin: 0 auto;
-        padding: 10px;
-        padding-top: 0px;
-    }
-    .textareaMes ul li {
-            text-align: left;
-        list-style-type: none;
-        font-weight: 400;
-    }
+	
+	.textareaMes p {
+	    padding: 10px;
+	}
+	
+	.textareaMes ul {
+	    width: 100%;
+	    margin: 0 auto;
+	    padding: 10px;
+	    padding-top: 0px;
+	}
+	
+	.textareaMes ul li {
+	    text-align: left;
+	    list-style-type: none;
+	    font-weight: 400;
+	}
 	
 	.afterContact {
 	    /*display: none;*/
@@ -604,7 +651,7 @@
 	    top: 0px;
 	    background-image: url('http://outsoft.com//wp-content/themes/jarvis_wp/landing-page/GlobalMobileGamesMarketOutlook2015-2018/img/bg_2.jpg');
 	    overflow-y: auto;
-        height: 100%;
+	    height: 100%;
 	}
 	
 	.afterContactReletive {
@@ -665,15 +712,6 @@
 	    margin: 85px auto;
 	    position: relative;
 	}
-	/*.soc:before {
-	    content: '';
-	    position: absolute;
-	    left: 0px;
-	    top: 0px;
-	    width: 100%;
-	    height: 100%;
-	    background: rgba(54, 54, 54, 0.95);
-	}*/
 	
 	.soc > div {
 	    float: left !important;
@@ -750,7 +788,7 @@
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
-	    background: rgba(0,169,181, 0.7) url(http://outsoft.com/wp-content/themes/jarvis_wp/images/ball-triangle.svg) center center no-repeat;
+	    background: rgba(0, 169, 181, 0.7) url(http://outsoft.com/wp-content/themes/jarvis_wp/images/ball-triangle.svg) center center no-repeat;
 	    background-size: 70px;
 	    display: none;
 	}
@@ -996,33 +1034,42 @@
 	        width: 100% !important;
 	    }
 	}
-    @media screen and (max-width:1200px) {
-        form h2, .buttomBlock h1, .triangleblock .content > div h2{
-            font-size: 20px;
-        }
-        form h2 span, .buttomBlock h1 span, .triangleblock .content > div:nth-child(1):before, .triangleblock .content > div:nth-child(2):before, .triangleblock .content > div:nth-child(3):before{
-            font-size: 25px;
-        }
-        .fourBlocks .content > div{
-            padding: 50px;
-        }
-        .triangleblock .content > div img, .imgOverlay{
-            width: 240px;
-        }
-        .triangleblock .content > div{
-            height: 425px;
-        }
-        .triangleblock .content > div .imgOverlay:before{
-            font-size: 30px !important;
-        }
-        .triangleblock .content > div h2{
-            padding-left: 65px;
-        }
-    }
+	
+	@media screen and (max-width:1200px) {
+	    form h2,
+	    .buttomBlock h1,
+	    .triangleblock .content > div h2 {
+	        font-size: 20px;
+	    }
+	    form h2 span,
+	    .buttomBlock h1 span,
+	    .triangleblock .content > div:nth-child(1):before,
+	    .triangleblock .content > div:nth-child(2):before,
+	    .triangleblock .content > div:nth-child(3):before {
+	        font-size: 25px;
+	    }
+	    .fourBlocks .content > div {
+	        padding: 50px;
+	    }
+	    .triangleblock .content > div img,
+	    .imgOverlay {
+	        width: 240px;
+	    }
+	    .triangleblock .content > div {
+	        height: 425px;
+	    }
+	    .triangleblock .content > div .imgOverlay:before {
+	        font-size: 30px !important;
+	    }
+	    .triangleblock .content > div h2 {
+	        padding-left: 65px;
+	    }
+	}
+	
 	@media screen and (max-width:1030px) {
-        .logo{
-            width: 180px;
-        }
+	    .logo {
+	        width: 180px;
+	    }
 	}
 	
 	@media screen and (max-width:960px) {
@@ -1030,7 +1077,7 @@
 	        width: 100%;
 	        padding: 20px;
 	        overflow: hidden;
-            margin: 0px auto;
+	        margin: 0px auto;
 	    }
 	    .soc > div {
 	        float: none !important;
@@ -1071,34 +1118,42 @@
 	        display: block;
 	    }
 	}
-@media screen and (max-width:870px) {
-    .circleblock{
-        display: none;
-    }
-}
+	
+	@media screen and (max-width:870px) {
+	    .circleblock {
+	        display: none;
+	    }
+	}
+	
 	@media screen and (max-width:768px) {
-	    form h2, .buttomBlock h1, .triangleblock .content > div h2{
-            font-size: 15px;
-        }
-        form h2 span, .buttomBlock h1 span, .triangleblock .content > div:nth-child(1):before, .triangleblock .content > div:nth-child(2):before, .triangleblock .content > div:nth-child(3):before{
-            font-size: 20px;
-        }
-        .buttomBlock h1 + img{
-            width: 100px;
-        }
-        .triangleblock .content > div img {
-            width: 240px;
-            margin: 20px auto;
-            display: block;
-        }
-        .triangleblock .content > div{
-            width: 100%;
-            height: auto;
-        }
-        .triangleblock .content > div h2{
-            font-size: 20px;
-                top: 50%;
-        }
+	    form h2,
+	    .buttomBlock h1,
+	    .triangleblock .content > div h2 {
+	        font-size: 15px;
+	    }
+	    form h2 span,
+	    .buttomBlock h1 span,
+	    .triangleblock .content > div:nth-child(1):before,
+	    .triangleblock .content > div:nth-child(2):before,
+	    .triangleblock .content > div:nth-child(3):before {
+	        font-size: 20px;
+	    }
+	    .buttomBlock h1 + img {
+	        width: 100px;
+	    }
+	    .triangleblock .content > div img {
+	        width: 240px;
+	        margin: 20px auto;
+	        display: block;
+	    }
+	    .triangleblock .content > div {
+	        width: 100%;
+	        height: auto;
+	    }
+	    .triangleblock .content > div h2 {
+	        font-size: 20px;
+	        top: 50%;
+	    }
 	}
 	
 	@media screen and (max-width: 650px) and (orientation: landscape) {
@@ -1125,13 +1180,13 @@
 	}
 	
 	@media screen and (max-width:650px) {
-        .fourBlocks .content > div:nth-child(1){
-            display: none;
-        }
-        .fourBlocks .content > div {
-            padding: 25px;
-            width: 100%;
-        }
+	    .fourBlocks .content > div:nth-child(1) {
+	        display: none;
+	    }
+	    .fourBlocks .content > div {
+	        padding: 25px;
+	        width: 100%;
+	    }
 	    header .content .text-block h2,
 	    header .content .text-block h1 {
 	        font-size: 30px;
@@ -1146,7 +1201,8 @@
 	    form textarea {
 	        margin-bottom: 25px !important;
 	    }
-	    .button, .circleblock {
+	    .button,
+	    .circleblock {
 	        display: none;
 	    }
 	    header .content {
@@ -1165,48 +1221,52 @@
 	    footer img.outsoft_logo_footer {
 	        padding-bottom: 20px;
 	    }
-        
-        header .content > div, header .content + .content{
-            width: 100%;
-            position: relative;
-            height: auto !important;
-            z-index: 2;
-        }
-        .buttomBlock {
-            position: relative;
-            width: 100%;
-            color: white;
-            bottom: 40px;
-            margin-top: 100px;
-        }
-        form h2, .buttomBlock h1{
-            font-size: 20px;
-        }
-        form h2 span, .buttomBlock h1 span{
-            font-size: 25px;
-        }
-        header .content + .content {
-            position: relative;
-            top: 0%;
-            left: 0%;
-            transform: translate(0%, 0%);
-            -moz-transform:translate(0%, 0%);
-            -o-transform: translate(0%, 0%);
-            -webkit-transform: translate(0%, 0%);
-            -ms-transform: translate(0%, 0%);
-            z-index: 2;
-        }
-        html, body, header {
-            height: auto;
-        }
-        header:after{
-            width: 100%;
-        }
-        .logo {
-            width: 180px;
-            z-index: 2;
-            position: relative;
-        }
+	    header .content > div,
+	    header .content + .content {
+	        width: 100%;
+	        position: relative;
+	        height: auto !important;
+	        z-index: 2;
+	    }
+	    .buttomBlock {
+	        position: relative;
+	        width: 100%;
+	        color: white;
+	        bottom: 40px;
+	        margin-top: 100px;
+	    }
+	    form h2,
+	    .buttomBlock h1 {
+	        font-size: 20px;
+	    }
+	    form h2 span,
+	    .buttomBlock h1 span {
+	        font-size: 25px;
+	    }
+	    header .content + .content {
+	        position: relative;
+	        top: 0%;
+	        left: 0%;
+	        transform: translate(0%, 0%);
+	        -moz-transform: translate(0%, 0%);
+	        -o-transform: translate(0%, 0%);
+	        -webkit-transform: translate(0%, 0%);
+	        -ms-transform: translate(0%, 0%);
+	        z-index: 2;
+	    }
+	    html,
+	    body,
+	    header {
+	        height: auto;
+	    }
+	    header:after {
+	        width: 100%;
+	    }
+	    .logo {
+	        width: 180px;
+	        z-index: 2;
+	        position: relative;
+	    }
 	}
 	
 	@media screen and (max-width:480px) {
@@ -1230,8 +1290,8 @@
 	    footer img.outsoft_logo_footer {
 	        max-width: 100px;
 	    }
-        .hoverBlock p{
-            line-height: 15px;
-            font-size: 12px;
-        }
+	    .hoverBlock p {
+	        line-height: 15px;
+	        font-size: 12px;
+	    }
 	}

@@ -19,9 +19,6 @@ $(".buttomBlock img").click(function () {
     
 });
 
-
-
-
 function height_Content() {
     $('.afterContactReletive').height($('#portfolio-wrap').position().top);
 }
@@ -94,7 +91,6 @@ $(".thereBlock").mousemove(function(e){
         }
     }
 /************************************* Validation Form ********************************************/
-//var http = location.href;
 $(document).ready(function () {
 
     if ($('#content').val() == '') {
@@ -125,29 +121,32 @@ $(document).ready(function () {
         $('header .content .text-block h2').css('font-family', 'BebasNeueRegular');
     }
 
-    $("#subject").val('Request for developers at Outsoft');
+    $("#subject").val('Request for developers at resume.outsoftsolutions.com');
     jQuery('form').submit(function () {
         var valid = validateContact();
-        var contentURL = 'Name: ' + $("#userName").val() + '\n' +$('#content').val() + '\n' + 'URL: ' + location.href + '\n' + 'IP: ';
+        var contentURL = 'Name: ' + $("#userName").val() + '\n' + $('#content').val() + '\n' + 'URL: ' + location.href + '\n' + 'IP: ';
         var formData = {
             userName: $("#userName").val(),
             userEmail: $("#userEmail").val(),
             content: contentURL,
+            cleanContent: $('#content').val(),
             titleMail: $('.hideRequestTitle').text(),
-            subject: $("#subject").val()
+            subject: $("#subject").val(),
+            the_req: $("#the_req").val(),
+            the_source: $("#the_source").val()
         };
         if (valid) {
             $('.after_contact').show(100);
             jQuery.ajax({
-                url: "contact-form.php",
+                url: "http://resume.outsoft.com/contact-form.php",
                 data: formData,
                 type: "POST",
                 success: function () {
                     location.href = 'http://resume.outsoftsolutions.com/thank-you.html';
-                    //dataLayer.push({'event': 'Send_form'});
+                    dataLayer.push({'event': 'Send_form'});
                 },
                 error: function (xhr, status, error) {
-                    alert(xhr.responseText + '|\n' + status + '|\n' + error);
+                    console.log(xhr, status, error);
                 }
 
             });
